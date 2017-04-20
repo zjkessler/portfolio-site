@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mySite">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Zach Kessler</title>
+</head>
+<!-- bower:css -->
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="assets/styles.css">
+<!-- endinject -->
+
+<body>
+
+	<h1> World</h1>
+	<div ui-view="about"></div>
+	<div ui-view="portfolio"></div>
+	<div ui-view="contact"></div>
+	<!-- bower:js -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+
+	<!-- inject:js -->
+	<script src="config.js"></script>
+	<script src="components/about/about.js"></script>
+	<script src="components/contact/contact.js"></script>
+	<script src="components/portfolio/portfolio.js"></script>
+	<!-- endinject -->
+</body>
+
+</html>
