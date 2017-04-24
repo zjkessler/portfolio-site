@@ -1,24 +1,31 @@
 'use strict';
 var app = angular.module('mySite', ['ui.router']);
 
-app.config(['$stateProvider', function ($stateProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+
+	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
-		.state({
+		.state('home', {
+			url: '/',
 			views: {
 				'about': {
 					templateUrl: 'components/about/about.html',
-					controller: 'aboutCtrl'
+					controller: 'aboutCtrl',
+					controllerAs: 'vm'
 				},
 				'portfolio': {
 					templateUrl: 'components/portfolio/portfolio.html',
-					controller: 'portfolioCtrl'
+					controller: 'portfolioCtrl',
+					controllerAs: 'vm'
 				},
 				'contact': {
 					templateUrl: 'components/contact/contact.html',
-					controller: 'contactCtrl'
+					controller: 'contactCtrl',
+					controllerAs: 'vm'
 				}
 			}
 		});
+
 
 }]);
