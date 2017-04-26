@@ -1,8 +1,8 @@
 'use strict';
 var app = angular.module('mySite');
 
-app.controller('portfolioCtrl', [function () {
+app.controller('portfolioCtrl', ['MyInfoSvc', function (MyInfoSvc) {
 	var vm = this;
 
-	vm.about = 'about';
+	vm.content = MyInfoSvc.portfolio;
 }]);

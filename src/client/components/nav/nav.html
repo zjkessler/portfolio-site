@@ -1,0 +1,10 @@
+<div class="header-bkg" layout-align="center center" layout="column" flex>
+	<h1 class="md-display-2
+ md-padding">Zachary James Kessler</h1>
+	<div class="profile-pic" md-whiteframe="20"></div>
+	<div layout="row" flex>
+		<div ng-repeat="links in nav.links" layout-align="space-around center">
+			<md-button ui-sref="">{{links.name}}</md-button>
+		</div>
+	</div>
+</div>
