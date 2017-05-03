@@ -1,21 +1,25 @@
-<div layout-align="center center">
-	<h1 class="md-display-3">portfolio</h1>
+<div layout-margin>
+	<md-card flex flex-offset-gt-sm="5" flex-gt-sm="90" class="md-whiteframe-4dp">
+		<md-toolbar class="md-whiteframe-6dp">
+			<span class="md-padding md-heading">Portfolio</span>
+		</md-toolbar>
 
-	<div layout-gt-sm="row" layout="column">
-		<md-card flex flex-gt-sm="33%" ng-repeat="item in vm.content" layout-align="center center">
-			<md-card-title>
-				<md-card-title-text>
-					<h3>{{item.title}}</h3>
-				</md-card-title-text>
-			</md-card-title>
+		<div layout-gt-sm="row" layout="column">
+			<md-card flex flex-gt-sm="33%" ng-repeat="item in vm.content" layout-align="center">
+				<md-toolbar class="md-warn md-toolbar-tools" layout-align="center start" class="md-whiteframe-2dp">
 
-			<md-card-content>
-				<a md-whiteframe="10" ng-href="{{item.url}}"><img class="portfolio-img" ng-src="{{item.img}}" alt=""></a>
-				<p>{{item.description}}</p>
-				<md-list>
-					<md-list-item ng-repeat="content in item.content">{{content}}</md-list-item>
-				</md-list>
-			</md-card-content>
-		</md-card>
-	</div>
+					<h3 class="md-padding">{{item.title}}</h3>
+
+				</md-toolbar>
+
+				<md-card-content>
+					<a md-whiteframe="10" ng-href="{{item.url}}"><img class="portfolio-img" ng-src="{{item.img}}" alt=""></a>
+					<p>{{item.description}}</p>
+					<md-list>
+						<md-list-item ng-repeat="content in item.content">{{content}}</md-list-item>
+					</md-list>
+				</md-card-content>
+			</md-card>
+		</div>
+	</md-card>
 </div>

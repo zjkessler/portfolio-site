@@ -6,3 +6,7 @@ app.controller('aboutCtrl', ['MyInfoSvc', function (MyInfoSvc) {
 
 	vm.about = MyInfoSvc.about;
 }]);
+app.component('about', {
+	templateUrl: 'components/about/about.html',
+	controller: 'aboutCtrl as vm'
+});

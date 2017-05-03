@@ -3,6 +3,7 @@ var app = angular.module('mySite');
 
 app.controller('navCtrl', [function () {
 	var nav = this;
+
 	nav.links = [{
 		name: 'about'
 	}, {

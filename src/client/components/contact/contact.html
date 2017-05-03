@@ -1,11 +1,27 @@
-<div layout-align="center center" layout="column" flex>
-	<h1 class="md-display-3">get in touch!</h1>
-	<md-list flex="50">
-		<h6>Contact Info:</h6>
+<div layout-margin>
+	<md-card layout="column" flex flex-gt-sm="70" flex-offset-gt-sm="15" class="md-whiteframe-4dp">
+		<md-toolbar md-whiteframe-6dp class="md-toolbar-tools">
+			<span class="md-padding md-heading">Get In Touch!</span>
+		</md-toolbar>
+		<md-card>
+			<md-card-title layout-align="center center">
+				<span class="md-headline">Contact Info</span>
+			</md-card-title>
+			<md-card-content layout-gt-sm="row">
+				<div flex-gt-sm="50" layout="column" layout-align="center center">
+					<md-list>
+						<md-list-item>{{vm.contact.street}}</md-list-item>
+						<md-list-item>{{vm.contact.city}}, {{vm.contact.state}} {{vm.contact.zip}}</md-list-item>
+						<md-list-item>{{vm.contact.phone}}</md-list-item>
+						<md-list-item><a>{{vm.contact.email}}</a></md-list-item>
+					</md-list>
+				</div>
+				<div flex-gt-sm="50" layout="column" layout-align="center center">
+					<md-button class="md-accent" ng-href="">Email Me Here</md-button>
+					<md-button class="md-accent">Download My Latest Resume Here</md-button>
+				</div>
 
-		<md-list-item>{{vm.contact.street}}</md-list-item>
-		<md-list-item>{{vm.contact.city}}, {{vm.contact.state}} {{vm.contact.zip}}</md-list-item>
-		<md-list-item>{{vm.contact.phone}}</md-list-item>
-		<md-list-item><a href="">{{vm.contact.email}}</a></md-list-item>
-	</md-list>
+			</md-card-content>
+		</md-card>
+	</md-card>
 </div>

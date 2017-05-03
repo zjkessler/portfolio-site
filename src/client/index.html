@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Zach Kessler</title>
 </head>
+<base href=",">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 <!-- bower:css -->
 <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
@@ -14,15 +15,16 @@
 <link rel="stylesheet" href="assets/styles.css">
 <!-- endinject -->
 
-<body>
-
-	<nav></nav>
-	
-	<div ui-view="about"></div>
-	<div ui-view="portfolio"></div>
-	<div ui-view="contact"></div>
-
-
+<body ng-cloak>
+		<nav></nav>
+		<about></about>
+		<portfolio></portfolio>
+		<contact></contact>
+		<!--
+<div ui-view="about"></div>
+<div ui-view="portfolio"></div>
+<div ui-view="contact"></div>
+-->
 
 	<!-- bower:js -->
 	<script src="bower_components/angular/angular.js"></script>
