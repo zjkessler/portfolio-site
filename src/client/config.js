@@ -1,12 +1,16 @@
 'use strict';
 var app = angular.module('mySite', ['ui.router', 'ngAnimate', 'ngMaterial']);
 
-app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$mdThemingProvider', function ($stateProvider, $urlRouterProvider, $locationProvider, $mdThemingProvider) {
 
 	$locationProvider.hashPrefix('')
 		.html5Mode(true);
 
 	$urlRouterProvider.otherwise('/');
+
+	$mdThemingProvider.theme('default')
+		.primaryPalette('orange')
+		.accentPalette('light-blue');
 
 	//	$stateProvider
 	//		.state('home', {

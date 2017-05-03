@@ -1,4 +1,4 @@
-body {
+md-content {
 	background: url(img/freddy-marschall-186919.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -6,9 +6,7 @@ body {
 	background-size: cover;
 }
 
-md-content {
-	background-color: transparent !important;
-}
+md-content {}
 
 .box {
 	margin: 25px auto;
@@ -21,6 +19,14 @@ md-content {
 	transform: rotate(360deg);
 	background: #9351A6;
 	border-radius: 50%;
+}
+
+.button-flip:hover {
+	transform: rotateX(360deg);
+	transition: all 1s ease-in-out;
+	height: 25%;
+	width: 100%;
+	z-index: 99999;
 }
 
 .rotate {

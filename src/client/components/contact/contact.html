@@ -1,6 +1,6 @@
-<div layout-margin>
-	<md-card layout="column" flex flex-gt-sm="70" flex-offset-gt-sm="15" class="md-whiteframe-4dp">
-		<md-toolbar md-whiteframe-6dp class="md-toolbar-tools">
+<div layout-margin flex-gt-sm="70" flex-offset-gt-sm="15">
+	<md-card layout="column" flex md-whiteframe="10">
+		<md-toolbar md-whiteframe="6" class="md-toolbar-tools">
 			<span class="md-padding md-heading">Get In Touch!</span>
 		</md-toolbar>
 		<md-card>
@@ -17,8 +17,10 @@
 					</md-list>
 				</div>
 				<div flex-gt-sm="50" layout="column" layout-align="center center">
-					<md-button class="md-accent" ng-href="">Email Me Here</md-button>
-					<md-button class="md-accent">Download My Latest Resume Here</md-button>
+					<md-button class="md-accent md-raised button-flip" ng-href="mailto:{{vm.contact.email}}">Email Me Here</md-button>
+
+					<md-button class="md-accent md-raised button-flip" ng-href="assets/docs/resume.pdf" download="ZachKesslerResume">Download My Latest Resume Here</md-button>
+
 				</div>
 
 			</md-card-content>

@@ -1,18 +1,18 @@
-<div layout-margin>
-	<md-card flex flex-offset-gt-sm="5" flex-gt-sm="90" class="md-whiteframe-4dp">
+<div layout-margin flex-offset-gt-sm="5" flex-gt-sm="90">
+	<md-card flex md-whiteframe="10">
 		<md-toolbar class="md-whiteframe-6dp">
 			<span class="md-padding md-heading">Portfolio</span>
 		</md-toolbar>
 
 		<div layout-gt-sm="row" layout="column">
-			<md-card flex flex-gt-sm="33%" ng-repeat="item in vm.content" layout-align="center">
-				<md-toolbar class="md-warn md-toolbar-tools" layout-align="center start" class="md-whiteframe-2dp">
+			<md-card flex flex-gt-sm="33%" ng-repeat="item in vm.content">
+				<md-toolbar class="md-accent md-hue-3 md-toolbar-tools md-whiteframe-2dp" layout-align="center start">
 
 					<h3 class="md-padding">{{item.title}}</h3>
 
 				</md-toolbar>
 
-				<md-card-content>
+				<md-card-content layout="column" layout-align="center center">
 					<a md-whiteframe="10" ng-href="{{item.url}}"><img class="portfolio-img" ng-src="{{item.img}}" alt=""></a>
 					<p>{{item.description}}</p>
 					<md-list>
