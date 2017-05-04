@@ -23,10 +23,10 @@ md-content {}
 
 .button-flip:hover {
 	transform: rotateX(360deg);
-	transition: all 1s ease-in-out;
-	height: 25%;
+	transition: all 1s ease-in;
 	width: 100%;
 	z-index: 99999;
+	perspective: 100px;
 }
 
 .rotate {
@@ -35,6 +35,7 @@ md-content {}
 
 .rotate:hover {
 	transition: all 1s ease-in-out;
+	
 }
 
 .portfolio-img {
