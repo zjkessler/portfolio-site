@@ -6,8 +6,6 @@ md-content {
 	background-size: cover;
 }
 
-md-content {}
-
 .box {
 	margin: 25px auto;
 	background: #5FCF80;
@@ -19,25 +17,24 @@ md-content {}
 	transform: rotate(360deg);
 	background: #9351A6;
 	border-radius: 50%;
-}
-
-.button-flip:hover {
-	transform: rotateX(360deg);
-	transition: all 1s ease-in;
-	width: 100%;
-	z-index: 99999;
-	perspective: 100px;
-}
-
-.rotate {
-	transition: all 4s ease-in-out;
-}
-
-.rotate:hover {
-	transition: all 1s ease-in-out;
 	
 }
 
+.button-flip:hover {
+	transform: scale(1.5);
+	transition: all 1s ease-in;
+	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
+}
+.expand{
+	transition: all .5s ease-in-out;
+	z-index: 99999;
+}
+.expand:hover{
+	transform: scale(1.2);
+	transition: all .5s ease-in-out;
+	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
+	z-index: 99999;
+}
 .portfolio-img {
 	height: 300px;
 	width: 100%;
@@ -50,10 +47,14 @@ md-content {}
 	width: 175px;
 	border-radius: 50%;
 	background-image: url(img/IMG_0664.PNG);
+	transition: all .5s ease-in-out;
+	z-index: 9999;
 }
 
 .profile-pic:hover {
-	height: 200px;
-	width: 200px;
+	transform: scale(1.5);
 	transition: all .5s ease-in-out;
+	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
+	z-index: 9999;
+		
 }

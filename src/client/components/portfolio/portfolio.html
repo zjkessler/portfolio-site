@@ -13,7 +13,7 @@
 				</md-toolbar>
 
 				<md-card-content layout="column" layout-align="center center">
-					<a md-whiteframe="10" ng-href="{{item.url}}"><img class="portfolio-img" ng-src="{{item.img}}" alt=""></a>
+					<a md-whiteframe="10" ng-href="{{item.url}}" class="expand"><img class="portfolio-img" ng-src="{{item.img}}" alt=""></a>
 					<p>{{item.description}}</p>
 					<md-list>
 						<md-list-item ng-repeat="content in item.content">{{content}}</md-list-item>
