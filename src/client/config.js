@@ -6,7 +6,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$mdThe
 	$locationProvider.hashPrefix('')
 		.html5Mode(true);
 
-//	$urlRouterProvider.otherwise('/');
+	//	$urlRouterProvider.otherwise('/');
 
 	$mdThemingProvider.theme('default')
 		.primaryPalette('orange')
