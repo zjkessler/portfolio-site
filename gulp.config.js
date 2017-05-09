@@ -13,7 +13,7 @@ module.exports = function () {
 			'!' + client + '**/*.spec.js',
 		'!' + client + '**/bower_components/**/*.js'],
 		jsIgnorePath: client,
-		css: [client + '**/*.css', '!' + client + 'bower_components/**/*.css'],
+		css: [client + '**/*.css', client + '**/font-awesome/**/*.min.css', '!'+client + 'bower_components/**/*.css'],
 		server: '',
 
 		//	Bower and Npm Locations

@@ -5,21 +5,9 @@ md-content {
 	-o-background-size: cover;
 	background-size: cover;
 }
-
-.box {
-	margin: 25px auto;
-	background: #5FCF80;
-	width: 150px;
-	height: 150px;
+.button-flip{
+	transition: all 0.5s ease-in;
 }
-
-.box:hover {
-	transform: rotate(360deg);
-	background: #9351A6;
-	border-radius: 50%;
-	
-}
-
 .button-flip:hover {
 	transform: scale(1.5);
 	transition: all 1s ease-in;
@@ -27,7 +15,7 @@ md-content {
 }
 .expand{
 	transition: all .5s ease-in-out;
-	z-index: 99999;
+	z-index: 1;
 }
 .expand:hover{
 	transform: scale(1.2);
