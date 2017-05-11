@@ -5,24 +5,49 @@ md-content {
 	-o-background-size: cover;
 	background-size: cover;
 }
-.button-flip{
+
+.button-flip {
 	transition: all 0.5s ease-in;
 }
+
 .button-flip:hover {
 	transform: scale(1.5);
 	transition: all 1s ease-in;
 	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
 }
-.expand{
+
+.expand {
 	transition: all .5s ease-in-out;
-	z-index: 1;
+	z-index: 3;
 }
-.expand:hover{
+
+.expand:hover {
 	transform: scale(1.2);
 	transition: all .5s ease-in-out;
 	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
 	z-index: 99999;
 }
+
+div>.live-button-box,
+.wrap {
+	position: relative;
+	height: auto;
+}
+
+.live-button.a {
+	position: absolute;
+	top: 115px;
+	left: 15%;
+	z-index: 9999;
+}
+
+.live-button.b {
+	position: absolute;
+	top: 115px;
+	right: 15%;
+	z-index: 9999;
+}
+
 .portfolio-img {
 	height: 300px;
 	width: 100%;
@@ -44,5 +69,4 @@ md-content {
 	transition: all .5s ease-in-out;
 	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
 	z-index: 9999;
-		
 }

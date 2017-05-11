@@ -7,23 +7,41 @@
 			<md-card-title layout-align="center center">
 				<span class="md-headline">Contact Info</span>
 			</md-card-title>
-			<md-card-content layout-gt-sm="row">
-				<div flex-gt-sm="50" layout="column" layout-align="center center">
-					<md-list>
-						<md-list-item>{{vm.contact.street}}</md-list-item>
-						<md-list-item>{{vm.contact.city}}, {{vm.contact.state}} {{vm.contact.zip}}</md-list-item>
-						<md-list-item>{{vm.contact.phone}}</md-list-item>
-						<md-list-item><a>{{vm.contact.email}}</a></md-list-item>
-					</md-list>
-				</div>
-				<div flex-gt-sm="50" layout="column" layout-align="center center">
-					<md-button class="md-accent md-raised button-flip" ng-href="mailto:{{vm.contact.email}}">Email Me Here</md-button>
+			<div flex flex-gt-sm="70" flex-offset-gt-sm="15">
+				<md-card-content layout-gt-sm="row">
+					<div flex-gt-sm="50" layout="column" layout-align="center center">
+						<md-list>
+							<ul>
+								<div>
+									<md-icon class="material-icons">home</md-icon>{{vm.contact.street}}<br>
+									<md-icon></md-icon>{{vm.contact.city}}, {{vm.contact.state}} {{vm.contact.zip}}
+								</div>
 
-					<md-button class="md-accent md-raised button-flip" ng-href="assets/docs/resume.pdf" download="ZachKesslerResume" target="_blank">Download My Latest Resume Here</md-button>
-
-				</div>
-
-			</md-card-content>
+							</ul>
+							<ul>
+								<md-icon class="material-icons">phone</md-icon>{{vm.contact.phone}}</ul>
+							<ul>
+								<md-icon class="material-icons">email</md-icon>
+								<a>{{vm.contact.email}}</a>
+							</ul>
+						</md-list>
+					</div>
+					<div flex-gt-sm="50" layout="column" layout-align="center center">
+						<md-button class="md-accent md-raised button-flip" ng-href="mailto:{{vm.contact.email}}">
+							Email Me
+							<md-icon class="material-icons">send</md-icon>
+						</md-button>
+						<md-button class="md-accent md-raised button-flip" ng-href="assets/docs/resume.pdf" download="ZachKesslerResume" target="_blank">
+							Download My Resume
+							<md-icon class="material-icons">file_download</md-icon>
+						</md-button>
+						<md-button class="md-accent md-raised button-flip" ng-href="{{vm.contact.linkedin}}" target="_blank">
+							See My LinkedIn
+							<ng-md-icon icon="linkedin"></ng-md-icon>
+						</md-button>
+					</div>
+				</md-card-content>
+			</div>
 		</md-card>
 	</md-card>
 </div>

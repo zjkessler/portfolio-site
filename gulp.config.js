@@ -5,15 +5,17 @@ module.exports = function () {
 
 	var config = {
 		alljs: ['./src/**/*.js',
-				'./*js', '!' + client + 'bower_components/**/*.js'],
+			'./*js', '!' + client + 'bower_components/**/*.js'
+		],
 		client: client,
 		index: client + 'index.html',
 		js: [
-			  client + '**/*.js',
+			client + '**/*.js',
 			'!' + client + '**/*.spec.js',
-		'!' + client + '**/bower_components/**/*.js'],
+			'!' + client + '**/bower_components/**/*.js'
+		],
 		jsIgnorePath: client,
-		css: [client + '**/*.css', client + '**/font-awesome/**/*.min.css', '!'+client + 'bower_components/**/*.css'],
+		css: [client + '**/*.css', '!' + client + 'bower_components/**/*.css'],
 		server: '',
 
 		//	Bower and Npm Locations
@@ -21,6 +23,7 @@ module.exports = function () {
 			json: require('./bower.json'),
 			directory: client + 'bower_components/',
 			ignorePath: '../..'
+
 		},
 		//NODE 
 		defaultPort: 3000,

@@ -44,9 +44,9 @@ gulp.task('nodemon', ['inject'], function (cb) {
 				'NODE_ENV': 'development'
 			},
 			ignore: [
-      'gulpfile.js',
-      'node_modules/'
-    ]
+				'gulpfile.js',
+				'node_modules/'
+			]
 		})
 		.on('start', function () {
 			if (!called) {

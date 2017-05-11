@@ -10,29 +10,35 @@ app.service('MyInfoSvc', function () {
 		state: 'Utah',
 		zip: '84111',
 		phone: '801-230-0347',
-		email: 'zjkessler@gmail.com'
+		email: 'zjkessler@gmail.com',
+		linkedin: 'https://www.linkedin.com/in/zjkessler/',
+		github: 'https://github.com/zjkessler'
 	};
 
 	svc.portfolio = [{
 			title: 'The Flybox',
 			img: 'assets/img/fish Screen Shot 2017-04-25 at 6.14.26 PM.png',
-			url: 'https://fly-fishing.herokuapp.com/',
+			liveUrl: 'https://www.theflybox.net/',
+			githubUrl: 'https://github.com/zjkessler/fly-fishing',
 			description: 'A full stack web application that allows for fly-fishing blog curation.',
 			content: ['AngularJS MVC used to consume Feedly API requests', 'Custom RESTful node.js server with JSON requests to MongoDB'],
-	},
+		},
 		{
 			title: 'Jazz-Preview',
 			img: 'assets/img/jazzScreen Shot 2017-04-25 at 6.14.58 PM.png',
-			url: 'https://jazz-preview.herokuapp.com/',
+			liveUrl: 'https://jazz-preview.herokuapp.com/',
+			githubUrl: 'https://github.com/zjkessler/jazz_preview',
 			description: 'An interview project, requesting to combine 3 pages from the old Jazz website into 1 modern page.',
 			content: ['AngularJS with Angular Material & UI Bootstrap'],
-	}, {
+		}, {
 			title: 'Baby-Registry(Group-project)',
 			img: 'assets/img/babyScreen Shot 2017-04-25 at 6.15.11 PM.png',
-			url: 'http://sweet-registry.herokuapp.com/#/',
+			liveUrl: 'http://sweet-registry.herokuapp.com/#/',
+			githubUrl: 'https://github.com/vschool-slc-fall-2016/Gift-Registry',
 			description: 'A full stack MEAN application which allows a mom to create registry for their babies.',
 			content: ['Modular AngularJS front-end with custom RESTful backend for searching and creating registries', 'Requests using Walmart API', 'Bootstrap for page layout and formatting'],
-					}];
+		}
+	];
 
 	svc.about = {
 		quote: 'some-quote',
