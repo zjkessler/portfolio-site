@@ -38,7 +38,7 @@ app.service('MyInfoSvc', function () {
 			githubUrl: 'https://github.com/vschool-slc-fall-2016/Gift-Registry',
 			description: 'A full stack MEAN application which allows a mom to create registry for their babies.',
 			content: ['Modular AngularJS front-end with custom RESTful backend for searching and creating registries', 'Requests using Walmart API', 'Bootstrap for page layout and formatting'],
-		}
+		},
 	];
 
 	svc.about = {

@@ -36,16 +36,11 @@ div>.live-button-box,
 	height: auto;
 }
 
-.live-button.a {
+.live-button {
 	position: absolute;
-	top: 115px;
-	left: 15%;
-}
-
-.live-button.b {
-	position: absolute;
-	top: 115px;
-	right: 15%;
+	top: 7em;
+	left: 3em;
+	right: 3em;
 }
 
 .portfolio-img {

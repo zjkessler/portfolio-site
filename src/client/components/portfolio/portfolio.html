@@ -14,13 +14,16 @@
 
 				<md-card-content layout="column" layout-align="center center">
 					<div class="expand" flex md-whiteframe="10" class="live-button-box">
-						<div layout="column" layout-gt-sm="row" flex class="wrap">
-							<md-button class="live-button a button-flip md-warn md-raised" ng-href="{{item.liveUrl}}" target="_blank">
-								<ng-md-icon icon="input"></ng-md-icon>Live</md-button>
+						<div class="wrap">
+							<div layout="column" layout-gt-sm="row" class="live-button">
+								<md-button class="button-flip md-warn md-raised" ng-href="{{item.liveUrl}}" target="_blank">
+									<ng-md-icon icon="input"></ng-md-icon>Live</md-button>
 
-							<md-button class="live-button b button-flip md-warn md-raised" ng-href="{{item.githubUrl}}" target="_blank">
-								<ng-md-icon icon="github-circle"></ng-md-icon>Github</md-button>
+								<md-button class=" button-flip md-warn md-raised" ng-href="{{item.githubUrl}}" target="_blank">
+									<ng-md-icon icon="github-circle"></ng-md-icon>Github</md-button>
+							</div>
 						</div>
+
 						<img class="portfolio-img" ng-src="{{item.img}}" alt="">
 					</div>
 					<p>{{item.description}}</p>
