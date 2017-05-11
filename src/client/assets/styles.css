@@ -8,12 +8,14 @@ md-content {
 
 .button-flip {
 	transition: all 0.5s ease-in;
+	z-index: 9998;
 }
 
 .button-flip:hover {
 	transform: scale(1.5);
 	transition: all 1s ease-in;
 	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
+	z-index: 9999;
 }
 
 .expand {
@@ -25,7 +27,7 @@ md-content {
 	transform: scale(1.2);
 	transition: all .5s ease-in-out;
 	transition-timing-function: cubic-bezier(0, 0, 0, 1.54);
-	z-index: 99999;
+	z-index: 9999;
 }
 
 div>.live-button-box,
@@ -38,14 +40,12 @@ div>.live-button-box,
 	position: absolute;
 	top: 115px;
 	left: 15%;
-	z-index: 9999;
 }
 
 .live-button.b {
 	position: absolute;
 	top: 115px;
 	right: 15%;
-	z-index: 9999;
 }
 
 .portfolio-img {

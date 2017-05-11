@@ -13,12 +13,12 @@
 				</md-toolbar>
 
 				<md-card-content layout="column" layout-align="center center">
-					<div class="expand" flex md-whiteframe="10" class="live-button-box" ng-mouseenter="vm.showButton()" ng-mouseleave="hideButton()">
-						<div layout="row" flex class="wrap">
-							<md-button class="live-button a expand md-primary md-raised" ng-href="{{item.liveUrl}}" target="_blank">
+					<div class="expand" flex md-whiteframe="10" class="live-button-box">
+						<div layout="column" layout-gt-sm="row" flex class="wrap">
+							<md-button class="live-button a button-flip md-warn md-raised" ng-href="{{item.liveUrl}}" target="_blank">
 								<ng-md-icon icon="input"></ng-md-icon>Live</md-button>
 
-							<md-button class="live-button b expand md-primary md-raised" ng-href="{{item.githubUrl}}" target="_blank">
+							<md-button class="live-button b button-flip md-warn md-raised" ng-href="{{item.githubUrl}}" target="_blank">
 								<ng-md-icon icon="github-circle"></ng-md-icon>Github</md-button>
 						</div>
 						<img class="portfolio-img" ng-src="{{item.img}}" alt="">
@@ -27,7 +27,7 @@
 					<md-list>
 						<md-list-item ng-repeat="content in item.content">{{content}}</md-list-item>
 					</md-list>
-					</md-card-conten>
+				</md-card-content>
 			</md-card>
 		</div>
 	</md-card>
