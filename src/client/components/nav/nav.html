@@ -4,7 +4,9 @@
 	<div class="profile-pic" md-whiteframe="20"></div>
 	<div layout="row" flex>
 		<div ng-repeat="links in nav.links" layout-align="space-around center">
-			<!--			<md-button ui-sref="">{{links.name}}</md-button>-->
+			<md-button class="md-fab button-flip" ng-href="{{links.name}}" target="_blank">
+				<ng-md-icon icon="{{links.icon}}" style="fill:white"></ng-md-icon>
+			</md-button>
 		</div>
 	</div>
 </div>

@@ -6,11 +6,15 @@
 		<md-card>
 			<md-card-title layout-align="center center">
 				<span class="md-headline">Contact Info</span>
-				<md-divider></md-divider>
+
 			</md-card-title>
+
 			<div flex flex-gt-sm="70" flex-offset-gt-sm="15">
+				<md-divider></md-divider>
 				<md-card-content layout-gt-sm="row">
+
 					<div flex-gt-sm="50" layout="column" layout-align="center center">
+
 						<md-list>
 							<ul>
 								<div>
@@ -27,8 +31,9 @@
 							</ul>
 						</md-list>
 					</div>
+
 					<div flex-gt-sm="50" layout="column" layout-align="center center">
-						<md-button class="md-accent md-raised button-flip" ng-href="mailto:{{vm.contact.email}}">
+						<md-button class="md-accent md-raised button-flip" ng-href="{{vm.contact.emailto}}">
 							Email Me
 							<md-icon class="material-icons">send</md-icon>
 						</md-button>

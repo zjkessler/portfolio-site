@@ -1,15 +1,18 @@
 'use strict';
 var app = angular.module('mySite');
 
-app.controller('navCtrl', [function () {
+app.controller('navCtrl', ['MyInfoSvc', function (MyInfoSvc) {
 	var nav = this;
 
 	nav.links = [{
-		name: 'about'
+		name: MyInfoSvc.contact.emailto,
+		icon: "mail"
 	}, {
-		name: 'portfolio'
+		name: MyInfoSvc.contact.linkedin,
+		icon: "linkedin"
 	}, {
-		name: 'contact'
+		name: MyInfoSvc.contact.github,
+		icon: "github-circle"
 	}];
 }]);
 

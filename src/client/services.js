@@ -11,6 +11,7 @@ app.service('MyInfoSvc', function () {
 		zip: '84111',
 		phone: '801-230-0347',
 		email: 'zjkessler@gmail.com',
+		emailto: 'mailto:zjkessler@gmail.com',
 		linkedin: 'https://www.linkedin.com/in/zjkessler/',
 		github: 'https://github.com/zjkessler'
 	};
